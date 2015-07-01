@@ -25,6 +25,7 @@
 //
 
 @import UIKit;
+@import Foundation;
 
 /**
  *  UIToolbar category that creates toolbar's that are useful for text inputs.
