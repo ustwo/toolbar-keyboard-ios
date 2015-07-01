@@ -41,4 +41,17 @@
  */
 + (UIToolbar *)doneToolbarWithTarget:(id)target action:(SEL)action;
 
+/**
+ *  Creates a toolbar with a previous, next, space and system done button
+ *
+ *  @param target         The target object that receives the selector
+ *  @param previousAction The selector to perform on the target object when previous is pressed
+ *  @param previousText   The text for the previous button
+ *  @param nextAction     The selector to perform on the target object when next is pressed
+ *  @param nextText       The text for the next button
+ *  @param doneAction     The selector to peform on the target object when done is pressed
+ *
+ *  @return A new UIToolbar configured with a previous, next, space and system done button
+ */
++ (UIToolbar *)previousNextDoneToolbarWithTarget:(id)target previousAction:(SEL)previousAction previousText:(NSString *)previousText nextAction:(SEL)nextAction nextText:(NSString *)nextText doneAction:(SEL)doneAction;
 @end

@@ -37,11 +37,7 @@ static CGFloat const kToolBarHeight = 44.0f;
 
 + (UIToolbar *)doneToolbarWithTarget:(id)target action:(SEL)action
 {
-    UIBarButtonItem *flexibleSpaceButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
-    
-    UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:target action:action];
-    
-    NSArray *buttonItems = @[flexibleSpaceButtonItem, doneButtonItem];
+    NSArray *buttonItems = [[self class] flexibleSpaceAndDoneBarButtonItemsWithTarget:target doneAction:action];
     
     return [UIToolbar toolbarWithButtonItems:buttonItems];
 }
@@ -58,6 +54,30 @@ static CGFloat const kToolBarHeight = 44.0f;
     toolbar.items = buttonItems;
     
     return toolbar;
+}
+
++ (UIToolbar *)previousNextDoneToolbarWithTarget:(id)target previousAction:(SEL)previousAction previousText:(NSString *)previousText nextAction:(SEL)nextAction nextText:(NSString *)nextText doneAction:(SEL)doneAction
+{
+    UIBarButtonItem *previousBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:previousText style:UIBarButtonItemStylePlain target:target action:previousAction];
+    UIBarButtonItem *nextBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:nextText style:UIBarButtonItemStylePlain target:target action:nextAction];
+    
+    NSMutableArray *previousNextButtonItems = [@[previousBarButtonItem, nextBarButtonItem] mutableCopy];
+    NSArray *flexibleSpaceAndDoneBarButtonItems = [[self class] flexibleSpaceAndDoneBarButtonItemsWithTarget:target doneAction:doneAction];
+    
+    [previousNextButtonItems addObjectsFromArray:flexibleSpaceAndDoneBarButtonItems];
+    
+    return [UIToolbar toolbarWithButtonItems:previousNextButtonItems];
+}
+
++ (NSArray *)flexibleSpaceAndDoneBarButtonItemsWithTarget:(id)target doneAction:(SEL)doneAction
+{
+    UIBarButtonItem *flexibleSpaceButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    
+    UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:target action:doneAction];
+
+    NSArray *buttonItems = @[flexibleSpaceButtonItem, doneButtonItem];
+    
+    return buttonItems;
 }
 
 @end

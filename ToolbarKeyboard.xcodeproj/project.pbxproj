@@ -1,0 +1,439 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA11B2EA1B43E45100E26EC1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11B2E91B43E45100E26EC1 /* main.m */; };
+		AA11B2ED1B43E45100E26EC1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11B2EC1B43E45100E26EC1 /* AppDelegate.m */; };
+		AA11B2F01B43E45100E26EC1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11B2EF1B43E45100E26EC1 /* ViewController.m */; };
+		AA11B2F31B43E45100E26EC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA11B2F11B43E45100E26EC1 /* Main.storyboard */; };
+		AA11B2F51B43E45100E26EC1 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA11B2F41B43E45100E26EC1 /* Images.xcassets */; };
+		AA11B2F81B43E45100E26EC1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA11B2F61B43E45100E26EC1 /* LaunchScreen.xib */; };
+		AA11B3041B43E45100E26EC1 /* ToolbarKeyboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11B3031B43E45100E26EC1 /* ToolbarKeyboardTests.m */; };
+		AA11B30F1B43E48100E26EC1 /* UIToolbar+KeyboardAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA11B30E1B43E48100E26EC1 /* UIToolbar+KeyboardAdditions.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA11B2FE1B43E45100E26EC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA11B2DC1B43E45100E26EC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA11B2E31B43E45100E26EC1;
+			remoteInfo = ToolbarKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA11B2E41B43E45100E26EC1 /* ToolbarKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToolbarKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA11B2E81B43E45100E26EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA11B2E91B43E45100E26EC1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA11B2EB1B43E45100E26EC1 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA11B2EC1B43E45100E26EC1 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA11B2EE1B43E45100E26EC1 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA11B2EF1B43E45100E26EC1 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA11B2F21B43E45100E26EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA11B2F41B43E45100E26EC1 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AA11B2F71B43E45100E26EC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AA11B2FD1B43E45100E26EC1 /* ToolbarKeyboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToolbarKeyboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA11B3021B43E45100E26EC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA11B3031B43E45100E26EC1 /* ToolbarKeyboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToolbarKeyboardTests.m; sourceTree = "<group>"; };
+		AA11B30D1B43E48100E26EC1 /* UIToolbar+KeyboardAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+KeyboardAdditions.h"; sourceTree = "<group>"; };
+		AA11B30E1B43E48100E26EC1 /* UIToolbar+KeyboardAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+KeyboardAdditions.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA11B2E11B43E45100E26EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA11B2FA1B43E45100E26EC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA11B2DB1B43E45100E26EC1 = {
+			isa = PBXGroup;
+			children = (
+				AA11B2E61B43E45100E26EC1 /* ToolbarKeyboard */,
+				AA11B3001B43E45100E26EC1 /* ToolbarKeyboardTests */,
+				AA11B2E51B43E45100E26EC1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA11B2E51B43E45100E26EC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA11B2E41B43E45100E26EC1 /* ToolbarKeyboard.app */,
+				AA11B2FD1B43E45100E26EC1 /* ToolbarKeyboardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA11B2E61B43E45100E26EC1 /* ToolbarKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AA11B2EB1B43E45100E26EC1 /* AppDelegate.h */,
+				AA11B2EC1B43E45100E26EC1 /* AppDelegate.m */,
+				AA11B2EE1B43E45100E26EC1 /* ViewController.h */,
+				AA11B30D1B43E48100E26EC1 /* UIToolbar+KeyboardAdditions.h */,
+				AA11B30E1B43E48100E26EC1 /* UIToolbar+KeyboardAdditions.m */,
+				AA11B2EF1B43E45100E26EC1 /* ViewController.m */,
+				AA11B2F11B43E45100E26EC1 /* Main.storyboard */,
+				AA11B2F41B43E45100E26EC1 /* Images.xcassets */,
+				AA11B2F61B43E45100E26EC1 /* LaunchScreen.xib */,
+				AA11B2E71B43E45100E26EC1 /* Supporting Files */,
+			);
+			path = ToolbarKeyboard;
+			sourceTree = "<group>";
+		};
+		AA11B2E71B43E45100E26EC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA11B2E81B43E45100E26EC1 /* Info.plist */,
+				AA11B2E91B43E45100E26EC1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA11B3001B43E45100E26EC1 /* ToolbarKeyboardTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA11B3031B43E45100E26EC1 /* ToolbarKeyboardTests.m */,
+				AA11B3011B43E45100E26EC1 /* Supporting Files */,
+			);
+			path = ToolbarKeyboardTests;
+			sourceTree = "<group>";
+		};
+		AA11B3011B43E45100E26EC1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA11B3021B43E45100E26EC1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA11B2E31B43E45100E26EC1 /* ToolbarKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA11B3071B43E45100E26EC1 /* Build configuration list for PBXNativeTarget "ToolbarKeyboard" */;
+			buildPhases = (
+				AA11B2E01B43E45100E26EC1 /* Sources */,
+				AA11B2E11B43E45100E26EC1 /* Frameworks */,
+				AA11B2E21B43E45100E26EC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ToolbarKeyboard;
+			productName = ToolbarKeyboard;
+			productReference = AA11B2E41B43E45100E26EC1 /* ToolbarKeyboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA11B2FC1B43E45100E26EC1 /* ToolbarKeyboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA11B30A1B43E45100E26EC1 /* Build configuration list for PBXNativeTarget "ToolbarKeyboardTests" */;
+			buildPhases = (
+				AA11B2F91B43E45100E26EC1 /* Sources */,
+				AA11B2FA1B43E45100E26EC1 /* Frameworks */,
+				AA11B2FB1B43E45100E26EC1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA11B2FF1B43E45100E26EC1 /* PBXTargetDependency */,
+			);
+			name = ToolbarKeyboardTests;
+			productName = ToolbarKeyboardTests;
+			productReference = AA11B2FD1B43E45100E26EC1 /* ToolbarKeyboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA11B2DC1B43E45100E26EC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = ustwo;
+				TargetAttributes = {
+					AA11B2E31B43E45100E26EC1 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					AA11B2FC1B43E45100E26EC1 = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = AA11B2E31B43E45100E26EC1;
+					};
+				};
+			};
+			buildConfigurationList = AA11B2DF1B43E45100E26EC1 /* Build configuration list for PBXProject "ToolbarKeyboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA11B2DB1B43E45100E26EC1;
+			productRefGroup = AA11B2E51B43E45100E26EC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA11B2E31B43E45100E26EC1 /* ToolbarKeyboard */,
+				AA11B2FC1B43E45100E26EC1 /* ToolbarKeyboardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA11B2E21B43E45100E26EC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA11B2F31B43E45100E26EC1 /* Main.storyboard in Resources */,
+				AA11B2F81B43E45100E26EC1 /* LaunchScreen.xib in Resources */,
+				AA11B2F51B43E45100E26EC1 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA11B2FB1B43E45100E26EC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA11B2E01B43E45100E26EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA11B30F1B43E48100E26EC1 /* UIToolbar+KeyboardAdditions.m in Sources */,
+				AA11B2F01B43E45100E26EC1 /* ViewController.m in Sources */,
+				AA11B2ED1B43E45100E26EC1 /* AppDelegate.m in Sources */,
+				AA11B2EA1B43E45100E26EC1 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA11B2F91B43E45100E26EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA11B3041B43E45100E26EC1 /* ToolbarKeyboardTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA11B2FF1B43E45100E26EC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA11B2E31B43E45100E26EC1 /* ToolbarKeyboard */;
+			targetProxy = AA11B2FE1B43E45100E26EC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA11B2F11B43E45100E26EC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA11B2F21B43E45100E26EC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA11B2F61B43E45100E26EC1 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA11B2F71B43E45100E26EC1 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA11B3051B43E45100E26EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA11B3061B43E45100E26EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA11B3081B43E45100E26EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ToolbarKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA11B3091B43E45100E26EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ToolbarKeyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA11B30B1B43E45100E26EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ToolbarKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToolbarKeyboard.app/ToolbarKeyboard";
+			};
+			name = Debug;
+		};
+		AA11B30C1B43E45100E26EC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ToolbarKeyboardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ToolbarKeyboard.app/ToolbarKeyboard";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA11B2DF1B43E45100E26EC1 /* Build configuration list for PBXProject "ToolbarKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA11B3051B43E45100E26EC1 /* Debug */,
+				AA11B3061B43E45100E26EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA11B3071B43E45100E26EC1 /* Build configuration list for PBXNativeTarget "ToolbarKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA11B3081B43E45100E26EC1 /* Debug */,
+				AA11B3091B43E45100E26EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA11B30A1B43E45100E26EC1 /* Build configuration list for PBXNativeTarget "ToolbarKeyboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA11B30B1B43E45100E26EC1 /* Debug */,
+				AA11B30C1B43E45100E26EC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA11B2DC1B43E45100E26EC1 /* Project object */;
+}
