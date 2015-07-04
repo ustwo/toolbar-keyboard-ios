@@ -42,6 +42,19 @@ static CGFloat const kToolBarHeight = 44.0f;
     return [UIToolbar toolbarWithButtonItems:buttonItems];
 }
 
++ (UIToolbar *)previousNextDoneToolbarWithTarget:(id)target previousAction:(SEL)previousAction previousText:(NSString *)previousText nextAction:(SEL)nextAction nextText:(NSString *)nextText doneAction:(SEL)doneAction
+{
+    UIBarButtonItem *previousBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:previousText style:UIBarButtonItemStylePlain target:target action:previousAction];
+    UIBarButtonItem *nextBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:nextText style:UIBarButtonItemStylePlain target:target action:nextAction];
+    
+    NSMutableArray *previousNextButtonItems = [@[previousBarButtonItem, nextBarButtonItem] mutableCopy];
+    NSArray *flexibleSpaceAndDoneBarButtonItems = [[self class] flexibleSpaceAndDoneBarButtonItemsWithTarget:target doneAction:doneAction];
+    
+    [previousNextButtonItems addObjectsFromArray:flexibleSpaceAndDoneBarButtonItems];
+    
+    return [UIToolbar toolbarWithButtonItems:previousNextButtonItems];
+}
+
 
 #pragma mark - Private
 
@@ -54,19 +67,6 @@ static CGFloat const kToolBarHeight = 44.0f;
     toolbar.items = buttonItems;
     
     return toolbar;
-}
-
-+ (UIToolbar *)previousNextDoneToolbarWithTarget:(id)target previousAction:(SEL)previousAction previousText:(NSString *)previousText nextAction:(SEL)nextAction nextText:(NSString *)nextText doneAction:(SEL)doneAction
-{
-    UIBarButtonItem *previousBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:previousText style:UIBarButtonItemStylePlain target:target action:previousAction];
-    UIBarButtonItem *nextBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:nextText style:UIBarButtonItemStylePlain target:target action:nextAction];
-    
-    NSMutableArray *previousNextButtonItems = [@[previousBarButtonItem, nextBarButtonItem] mutableCopy];
-    NSArray *flexibleSpaceAndDoneBarButtonItems = [[self class] flexibleSpaceAndDoneBarButtonItemsWithTarget:target doneAction:doneAction];
-    
-    [previousNextButtonItems addObjectsFromArray:flexibleSpaceAndDoneBarButtonItems];
-    
-    return [UIToolbar toolbarWithButtonItems:previousNextButtonItems];
 }
 
 + (NSArray *)flexibleSpaceAndDoneBarButtonItemsWithTarget:(id)target doneAction:(SEL)doneAction

@@ -87,9 +87,9 @@
 				AA11B2EB1B43E45100E26EC1 /* AppDelegate.h */,
 				AA11B2EC1B43E45100E26EC1 /* AppDelegate.m */,
 				AA11B2EE1B43E45100E26EC1 /* ViewController.h */,
+				AA11B2EF1B43E45100E26EC1 /* ViewController.m */,
 				AA11B30D1B43E48100E26EC1 /* UIToolbar+KeyboardAdditions.h */,
 				AA11B30E1B43E48100E26EC1 /* UIToolbar+KeyboardAdditions.m */,
-				AA11B2EF1B43E45100E26EC1 /* ViewController.m */,
 				AA11B2F11B43E45100E26EC1 /* Main.storyboard */,
 				AA11B2F41B43E45100E26EC1 /* Images.xcassets */,
 				AA11B2F61B43E45100E26EC1 /* LaunchScreen.xib */,
@@ -424,6 +424,7 @@
 				AA11B3091B43E45100E26EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA11B30A1B43E45100E26EC1 /* Build configuration list for PBXNativeTarget "ToolbarKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +433,7 @@
 				AA11B30C1B43E45100E26EC1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

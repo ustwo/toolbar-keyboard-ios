@@ -16,36 +16,46 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
- 
     
-    self.textField.inputAccessoryView = [UIToolbar previousNextDoneToolbarWithTarget:self
-                                                                      previousAction:@selector(didPressKeyboardPreviousButton:)
-                                                                        previousText:@"Previous"
-                                                                          nextAction:@selector(didPressKeyboardNextButton:)
-                                                                            nextText:@"Next"
-                                                                          doneAction:@selector(didPressKeyboardDoneButton:)];
+    // Create the toolbar
     
-//    self.textField.inputAccessoryView = [UIToolbar doneToolbarWithTarget:self action:@selector(didPressKeyboardDoneButton:)];
+//    UIToolbar *toolbar = [UIToolbar doneToolbarWithTarget:self action:@selector(didPressKeyboardDoneButton:)];
+    
+    UIToolbar *toolbar = [UIToolbar previousNextDoneToolbarWithTarget:self
+                                                       previousAction:@selector(didPressKeyboardPreviousButton:)
+                                                         previousText:NSLocalizedString(@"Previous", nil)
+                                                           nextAction:@selector(didPressKeyboardNextButton:)
+                                                             nextText:NSLocalizedString(@"Next", nil)
+                                                           doneAction:@selector(didPressKeyboardDoneButton:)];
+    
+    // Attach it to the top of a text field's keyboard
+    
+    self.textField.inputAccessoryView = toolbar;
     
 }
 
 
+#pragma mark - UI Actions
+
 - (void)didPressKeyboardDoneButton:(id)sender
 {
+    // Hide keyboard
+    
     [self.view endEditing:YES];
 }
 
 - (void)didPressKeyboardPreviousButton:(id)sender
 {
-    // TODO:
+    // ...
 }
 
 - (void)didPressKeyboardNextButton:(id)sender
 {
 
-    // TODO:
+    // ...
 }
 
 @end
