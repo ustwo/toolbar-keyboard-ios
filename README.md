@@ -11,8 +11,6 @@ UIToolbar category to create toolbars useful for text input views e.g. keyboards
 
 ### Usage
 
-Examples:
-
 UIToolbar with Done button
 
     // Create the toolbar
@@ -66,6 +64,12 @@ UIToolbar with Previous, Next and Done button
 	
 	    // ...
 	}
+
+### Screenshots
+
+<img src="screen1.png" width="487" height="801" />
+
+<img src="screen2.png" width="487" height="801" />
 
 
 ### Team

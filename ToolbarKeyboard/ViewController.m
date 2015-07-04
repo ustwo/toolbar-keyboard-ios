@@ -22,14 +22,14 @@
     
     // Create the toolbar
     
-//    UIToolbar *toolbar = [UIToolbar doneToolbarWithTarget:self action:@selector(didPressKeyboardDoneButton:)];
+    UIToolbar *toolbar = [UIToolbar doneToolbarWithTarget:self action:@selector(didPressKeyboardDoneButton:)];
     
-    UIToolbar *toolbar = [UIToolbar previousNextDoneToolbarWithTarget:self
-                                                       previousAction:@selector(didPressKeyboardPreviousButton:)
-                                                         previousText:NSLocalizedString(@"Previous", nil)
-                                                           nextAction:@selector(didPressKeyboardNextButton:)
-                                                             nextText:NSLocalizedString(@"Next", nil)
-                                                           doneAction:@selector(didPressKeyboardDoneButton:)];
+//    UIToolbar *toolbar = [UIToolbar previousNextDoneToolbarWithTarget:self
+//                                                       previousAction:@selector(didPressKeyboardPreviousButton:)
+//                                                         previousText:NSLocalizedString(@"Previous", nil)
+//                                                           nextAction:@selector(didPressKeyboardNextButton:)
+//                                                             nextText:NSLocalizedString(@"Next", nil)
+//                                                           doneAction:@selector(didPressKeyboardDoneButton:)];
     
     // Attach it to the top of a text field's keyboard
     
